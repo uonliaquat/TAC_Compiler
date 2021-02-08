@@ -16,11 +16,13 @@ typedef struct TOKEN_STRUCT{
         TOKEN_GT,
         TOKEN_RIGHT_ARROW,
         TOKEN_INT,
-        TOKEN_SEMI
+        TOKEN_SEMI,
+        TOKEN_EOF
     } type;
 
 } token_T;
 
 token_T * init_token(char* value, int type);
+char* token_to_str(token_T* token);
 
 #endif
